@@ -1,0 +1,89 @@
+* {
+    font-family: 'Manrope', sans-serif;
+}
+
+nav { 
+    color: white;
+    background-image: linear-gradient(to bottom right, rgb(92, 175, 161), rgba(0,0,0,0.2)); 
+    font-size: 20px;
+}
+
+a {
+    color:white;
+}
+#initialRow {
+    margin-top: 1vh;
+}
+.box {
+    /* height: 21vw;  */
+    /* width: 22vw; */
+    height: 17vw;
+    width: 16vw;
+    min-width: 150px;
+    min-height: 150px;
+}
+
+#box1 i {
+    font-size: 7vw;
+    padding-top: 1vw;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+#box3 i {
+    font-size: 5vw;
+    padding-top: 7px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+#toggleIcon {
+    margin-left: 1vw;
+    margin-bottom: 4vw;
+}
+#box1 {
+    color: lightgrey;
+    background-color: #488178;
+    position: absolute;
+    top: 50px;
+    right: 54%;
+    z-index: -1;
+}
+
+#box2 {
+    color: lightgrey;
+    background-color:#488178;
+    position: absolute;
+    top: 50px;
+    right: 24%;
+    z-index: -1;
+}
+
+#box3 {
+    color: white;
+    background-color:  #5dafa1;
+    position: absolute;
+    top: 150px;
+    right: 39%;
+    z-index: 0;
+}
+
+#infoCol {
+    position: absolute;
+    top: 75%;
+    width: 60%;
+    height: 100px;
+    left: 21%;
+    background-color:#5dafa1;
+    font-weight: bold;
+    padding-top: 35px;
+}
+
+#infoCol .row {
+    font-size: 30px;
+    background-color:#5dafa1;
+}
+
+#infoCol h5 {
+    background-color:#5dafa1;
+}

@@ -1,0 +1,105 @@
+* {
+    font-family: 'Manrope', sans-serif;
+}
+
+nav { 
+    color: white;
+    background-image: linear-gradient(to bottom right, rgb(92, 175, 161), rgba(0,0,0,0.2)); 
+    font-size: 20px;
+}
+
+a {
+    color:white;
+}
+#initialRow {
+    margin-top: 1vh;
+}
+.box {
+    /* height: 21vw;  */
+    /* width: 22vw; */
+    height: 17vw;
+    width: 17vw;
+}
+#box1 {
+    background-color: #488178;
+    position: absolute;
+    top: 20%;
+    right: 70%;
+    z-index: -1;
+}
+
+#box2 {
+    background-color:#7fdacc;
+    position: absolute;
+    top: 40%;
+    right: 50%;
+    z-index: -1;
+}
+
+#box3 {
+    background-color:  #5dafa1;
+    position: absolute;
+    top: 20%;
+    right: 30%;
+    z-index: 0;
+}
+
+#box4 {
+    background-color:  #157e67;
+    position: absolute;
+    top: 50%;
+    right: 17%;
+    z-index: 0;
+}
+
+#box5 {
+    background-color:  #55a3bb;
+    position: absolute;
+    top: 60%;
+    right: 65%;
+    z-index: 0;
+}
+.box:hover {
+    height: 21vw;
+    width: 21vw;
+    z-index: 1;
+}
+
+img {
+    padding-top: 1vw;
+    padding-left: 1vw;
+    width: 16vw;
+    height: 16vw;
+}
+
+img:hover {
+    padding-top: 2vw;
+    padding-left: 2vw;
+    width: 19vw;
+    height: 19vw;
+    z-index: 2;
+}
+
+#projectNameBox {
+    position: absolute;
+    top: 87%;
+    right: 10%;
+    width: 50%;
+    height: 70px;
+    background-image: linear-gradient(to bottom right, rgb(92, 175, 161), rgba(0,0,0,0.2)); 
+    color: white;
+}
+
+.titleCard {
+    background-image: linear-gradient(to bottom right, rgb(92, 175, 161), rgba(0,0,0,0.2)); 
+    margin-top: 30px;
+    color: white;
+    padding: 10px;
+    border: none;
+}
+
+.infoCard {
+    background-color: #6dccbc;
+    border: none;
+    padding: 20px;
+}

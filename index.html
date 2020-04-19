@@ -4,11 +4,108 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dvorakjt Github Pages Repo</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e1ffe7f2ba.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="assets/styles/styles.css">
+    <title>Document</title>
 </head>
 
 <body>
-    <p>Hello, world!</p>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="nav-brand" href="#">JOSEPH DVORAK</a>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">about</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row" id="initialRow">
+            <div class="col">
+                <div class="box" id="box1" data-pos="1">
+                    <div class=row>
+                        <div class="col-sm-4"><i class="fab fa-html5"></i></div>
+                        <div class="col-sm-6"><i class="fab fa-js-square"></i></div>
+                        <div class="col-sm-2"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4"><i class="fab fa-css3-alt"></i></div>
+                        <div class="col-sm-6"><i class="fab fa-bootstrap"></i></div>
+                        <div class="col-sm-2"></div>
+                    </div>
+                </div>
+                <div class="box" id="box2" data-pos="2">
+                    <div class="row">
+                        <div class="col">
+                            <svg viewBox="0 0 24 24">
+                                <path
+                                    d="M12.42,5.29C11.32,5.19 10.35,6 10.25,7.11L10,10H12.82V12H9.82L9.38,17.07C9.18,19.27 7.24,20.9 5.04,20.7C3.79,20.59 2.66,19.9 2,18.83L3.5,17.33C3.83,18.38 4.96,18.97 6,18.63C6.78,18.39 7.33,17.7 7.4,16.89L7.82,12H4.82V10H8L8.27,6.93C8.46,4.73 10.39,3.1 12.6,3.28C13.86,3.39 15,4.09 15.66,5.17L14.16,6.67C13.91,5.9 13.23,5.36 12.42,5.29M22,13.65L20.59,12.24L17.76,15.07L14.93,12.24L13.5,13.65L16.35,16.5L13.5,19.31L14.93,20.72L17.76,17.89L20.59,20.72L22,19.31L19.17,16.5L22,13.65Z" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="box" id="box3" data-pos="3">
+                    <div class="row">
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-4"><i class="fas fa-palette"></i></div>
+                        <div class="col-sm-4"></div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-4"></div>
+                        <div class="col-sm-8">
+                            <i class="fas fa-toggle-on" id="toggleIcon" data-onOff="on"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2"></div>
+                <div class="col-md-10" id="infoCol">
+                    <div class="row">
+                        <div class="col-sm-1"><i class="fas fa-palette"></i></div>
+                        <div class="col-md-3">
+                            <h5>CREATIVE DESIGN</h5>
+                        </div>
+                        <div class="col-md-1"><i class="fas fa-mobile-alt"></i></div>
+                        <div class="col-md-3">
+                            <h5>RESPONSIVE UI</h5>
+                        </div>
+                        <div class="col-md-1">
+                            <div class="custom-control custom-switch">
+                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                <label class="custom-control-label" for="customSwitch1"></label>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <h5>INTERACTIVE UX</h5>
+                        </div>
+                    </div>
+                    <div class="col-md-2"></div>
+                </div>
+            </div>
+            <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+                integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+            <script src="assets/scripts/script.js"></script>
 </body>
 
 </html>
