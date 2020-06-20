@@ -4,108 +4,206 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link to bulma stylesheet-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <!--link to bootstrap stylesheet-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap" rel="stylesheet">
+    <!--fontawesome links-->
     <script src="https://kit.fontawesome.com/e1ffe7f2ba.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="assets/styles/styles.css">
-    <title>Joseph Dvorak | Front-End Developer</title>
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <!--link to custom stylesheet-->
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <title>Joe Dvorak | Web Developer | Home</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand navbar-dark">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="nav-brand" href="#">JOSEPH DVORAK</a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">about</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="portfolio.html">portfolio</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">contact</a>
-                </li>
-            </ul>
-        </div>
-    </nav>
-    <div class="container">
-        <div class="row" id="initialRow">
-            <div class="col">
-                <div class="box" id="box1" data-pos="1">
-                    <div class=row>
-                        <div class="col-sm-4"><i class="fab fa-html5"></i></div>
-                        <div class="col-sm-6"><i class="fab fa-js-square"></i></div>
-                        <div class="col-sm-2"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4"><i class="fab fa-css3-alt"></i></div>
-                        <div class="col-sm-6"><i class="fab fa-bootstrap"></i></div>
-                        <div class="col-sm-2"></div>
+    <div class="bgImg">
+        <nav class="navbar sticky-top navbar-expand navbar-light">
+            <a class="nav-brand" href="#"><i class="fab fa-houzz" id="homeIcon"></i></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tech">tech</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <div class="box mt-3" id="about">
+                        <h5 id="aboutMeH5">Hi, I'm Joe. <i class="fas fa-mug-hot"></i> It's nice to meet you!</h5>
+                        <p id="aboutMeP">I'm a full-stack web developer, a classical clarinetist and educator, and a
+                            forward-thinking, problem-solving creative.</p>
+                        <button id="aboutMeBtn" class="btn btn-primary"
+                            style="white-space: nowrap; width:min-content;">Tell me
+                            more!</button>
                     </div>
                 </div>
-                <div class="box" id="box2" data-pos="2">
-                    <div class="row">
-                        <div class="col">
-                            <svg viewBox="0 0 24 24">
-                                <path
-                                    d="M12.42,5.29C11.32,5.19 10.35,6 10.25,7.11L10,10H12.82V12H9.82L9.38,17.07C9.18,19.27 7.24,20.9 5.04,20.7C3.79,20.59 2.66,19.9 2,18.83L3.5,17.33C3.83,18.38 4.96,18.97 6,18.63C6.78,18.39 7.33,17.7 7.4,16.89L7.82,12H4.82V10H8L8.27,6.93C8.46,4.73 10.39,3.1 12.6,3.28C13.86,3.39 15,4.09 15.66,5.17L14.16,6.67C13.91,5.9 13.23,5.36 12.42,5.29M22,13.65L20.59,12.24L17.76,15.07L14.93,12.24L13.5,13.65L16.35,16.5L13.5,19.31L14.93,20.72L17.76,17.89L20.59,20.72L22,19.31L19.17,16.5L22,13.65Z" />
-                            </svg>
+                <div class="col-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <div class="box" id="portfolio">
+                        <h5>My Projects</h5>
+                        <!--carousel-->
+                        <div class="row">
+                            <div class="col d-flex justify-content-center">
+                                <figure id="carouselIndicators" class="carousel slide" data-ride="carousel"
+                                    data-interval="4000">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                                        <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                                        <li data-target="#carouselIndicators" data-slide-to="3"></li>
+                                        <li data-target="#carouselIndicators" data-slide-to="4"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div id="carImg1" class="carouselImg">
+                                            </div>
+                                            <h5>Globe Plotter (collab)</h5>
+                                            <h6>visit the <a>webpage</a>/<a>repo</a></h6>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div id="carImg2" class="carouselImg">
+                                            </div>
+                                            <h5>Weather Dashboard</h5>
+                                            <h6>visit the <a>webpage</a>/<a>repo</a></h6>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div id="carImg3" class="carouselImg">
+                                            </div>
+                                            <h5>Notetaker</h5>
+                                            <h6>visit the <a>webpage</a>/<a>repo</a></h6>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div id="carImg4" class="carouselImg">
+                                            </div>
+                                            <h5>Song in the Life</h5>
+                                            <h6>(collab)</h6>
+                                            <h6>visit the <a>webpage</a>/<a>repo</a></h6>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div id="carImg5" class="carouselImg">
+                                            </div>
+                                            <h5>TeamBuilder</h5>
+                                            <h6>visit the <a>webpage</a>/<a>repo</a></h6>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselIndicators" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselIndicators" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </figure>
+                            </div>
                         </div>
+                        <figcaption>Check out my Github <a href="https://github.com/dvorakjt"
+                                target="_blank">profile</a> for more
+                            examples
+                            of my work or to view my code!
+                        </figcaption>
                     </div>
                 </div>
-                <div class="box" id="box3" data-pos="3">
-                    <div class="row">
-                        <div class="col-sm-4"></div>
-                        <div class="col-sm-4"><i class="fas fa-palette"></i></div>
-                        <div class="col-sm-4"></div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <i class="fas fa-mobile-alt"></i>
+                <div class="col-2"></div>
+            </div>
+            <!--New row-->
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <figure class="box" id="tech">
+                        <h5>Technologies</h5>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h6>Front-end</h6>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Bootstrap</li>
+                                    <li>Bulma</li>
+                                    <li>jQuery</li>
+                                    <li>Axios</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4">
+                                <h6>Back-end</h6>
+                                <ul>
+                                    <li>Node.js</li>
+                                    <li>Express.js</li>
+                                    <li>Express-handlebars</li>
+                                    <li>MySql</li>
+                                    <li>Sequelize</li>
+                                    <li>MongoDB</li>
+                                    <li>Mongoose</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4">
+                                <h6>Collaborative</h6>
+                                <ul>
+                                    <li>Github</li>
+                                    <li>Slack</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-sm-4"></div>
-                        <div class="col-sm-8">
-                            <i class="fas fa-toggle-on" id="toggleIcon" data-onOff="on"></i>
+                        <div class="row">
+                            <div class="col">
+                                <p>Background for this page by <a href="SVGBackgrounds.com">SVGBackgrounds.com</a>.</p>
+                            </div>
                         </div>
-                    </div>
+                    </figure>
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-2"></div>
-                <div class="col-md-10" id="infoCol">
-                    <div class="row">
-                        <div class="col-sm-1"><i class="fas fa-palette"></i></div>
-                        <div class="col-md-3">
-                            <h5>CREATIVE DESIGN</h5>
-                        </div>
-                        <div class="col-md-1"><i class="fas fa-mobile-alt"></i></div>
-                        <div class="col-md-3">
-                            <h5>RESPONSIVE UI</h5>
-                        </div>
-                        <div class="col-md-1">
-                            <div class="custom-control custom-switch">
-                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
-                                <label class="custom-control-label" for="customSwitch1"></label>
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <figure class="box" id="contact">
+                        <div class="row">
+                            <div class="col-6">
+                                <div id="contactCol">
+                                    <h5 id="contactH5">Let's build something together!</h5>
+                                </div>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end">
+                                <button class="btn btn-primary" id="contactBtn">Contact Me! --></button>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <h5>INTERACTIVE UX</h5>
-                        </div>
-                    </div>
-                    <div class="col-md-2"></div>
+                    </figure>
                 </div>
+                <div class="col-2"></div>
             </div>
-            <script src="https://code.jquery.com/jquery-3.5.0.min.js"
-                integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
-            <script src="assets/scripts/script.js"></script>
+        </div>
+    </div>
+    <!--link to jQuery and bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!--link to custom js script-->
+    <script src="./assets/scripts/script.js"></script>
 </body>
 
 </html>
