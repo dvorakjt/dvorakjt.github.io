@@ -21,6 +21,7 @@
 
 .box {
     margin-top: 50px;
+    min-width: 250px;
 }
 
 #carouselIndicator {

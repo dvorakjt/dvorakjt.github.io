@@ -20,7 +20,7 @@ $(document).ready(function () {
     ]
 
     const btnTxtArr = [
-        "Tell me more!", "How are coding and music related?", "Who are you again ..?"
+        "Tell me more!", "Coding and music", "Who are you again ..?"
     ]
 
     const contactHTML =
