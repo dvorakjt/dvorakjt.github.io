@@ -15,7 +15,7 @@ function Header() {
                         <Link className="nav-link" to="/portfolio">portfolio</Link>
                     </li>
                     <li className="nav-item">
-                        <a class="nav-link" href="/#contactJumbo">contact</a>
+                        <a class="nav-link" href="#contactJumbo">contact</a>
                     </li>
                 </ul>
             </div>

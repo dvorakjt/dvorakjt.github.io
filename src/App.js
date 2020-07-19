@@ -5,6 +5,7 @@ import Project from './Components/Project/Project';
 import * as data from './Data/projects.json'
 import Homepage from './Pages/Homepage/Homepage';
 import AllProjectsPage from './Pages/AllProjects/AllProjectsPage';
+import Nomatch from './Pages/Nomatch/Nomatch';
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 const projects = data.default.projects;
 
@@ -18,6 +19,9 @@ function App() {
           </Route>
           <Route exact path="/portfolio">
             <AllProjectsPage projects={projects} />
+          </Route>
+          <Route>
+            <Nomatch />
           </Route>
         </Switch>
       </div>
