@@ -1,1 +1,226 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="viewport" content="width=device-width,initial-scale=1"/><meta name="theme-color" content="#000000"/><meta name="description" content="Web site created using create-react-app"/><link rel="apple-touch-icon" href="/logo192.png"/><link rel="manifest" href="/manifest.json"/><link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"><link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet"><title>Joseph Dvorak | Full-stack Developer | Home</title><link href="/static/css/main.908bec9f.chunk.css" rel="stylesheet"></head><body><noscript>You need to enable JavaScript to run this app.</noscript><div id="root"></div><script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script><script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script><script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script><script>!function(e){function r(r){for(var n,l,f=r[0],i=r[1],p=r[2],c=0,s=[];c<f.length;c++)l=f[c],Object.prototype.hasOwnProperty.call(o,l)&&o[l]&&s.push(o[l][0]),o[l]=0;for(n in i)Object.prototype.hasOwnProperty.call(i,n)&&(e[n]=i[n]);for(a&&a(r);s.length;)s.shift()();return u.push.apply(u,p||[]),t()}function t(){for(var e,r=0;r<u.length;r++){for(var t=u[r],n=!0,f=1;f<t.length;f++){var i=t[f];0!==o[i]&&(n=!1)}n&&(u.splice(r--,1),e=l(l.s=t[0]))}return e}var n={},o={1:0},u=[];function l(r){if(n[r])return n[r].exports;var t=n[r]={i:r,l:!1,exports:{}};return e[r].call(t.exports,t,t.exports,l),t.l=!0,t.exports}l.m=e,l.c=n,l.d=function(e,r,t){l.o(e,r)||Object.defineProperty(e,r,{enumerable:!0,get:t})},l.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},l.t=function(e,r){if(1&r&&(e=l(e)),8&r)return e;if(4&r&&"object"==typeof e&&e&&e.__esModule)return e;var t=Object.create(null);if(l.r(t),Object.defineProperty(t,"default",{enumerable:!0,value:e}),2&r&&"string"!=typeof e)for(var n in e)l.d(t,n,function(r){return e[r]}.bind(null,n));return t},l.n=function(e){var r=e&&e.__esModule?function(){return e.default}:function(){return e};return l.d(r,"a",r),r},l.o=function(e,r){return Object.prototype.hasOwnProperty.call(e,r)},l.p="/";var f=this.webpackJsonpportfolio=this.webpackJsonpportfolio||[],i=f.push.bind(f);f.push=r,f=f.slice();for(var p=0;p<f.length;p++)r(f[p]);var a=i;t()}([])</script><script src="/static/js/2.d5a8aad1.chunk.js"></script><script src="/static/js/main.f0fd79d6.chunk.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link to bulma stylesheet-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <!--link to bootstrap stylesheet-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!--fontawesome links-->
+    <script src="https://kit.fontawesome.com/e1ffe7f2ba.js" crossorigin="anonymous"></script>
+    <!--google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <!--link to custom stylesheet-->
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <!--image for thumbnail-->
+    <meta name="image" property="og:image" content="./assets/screenshots/screen-2.png">
+    <title>Joe Dvorak | Web Developer | Home</title>
+</head>
+
+<body>
+    <div class="bgImg">
+        <nav class="navbar sticky-top navbar-expand navbar-light">
+            <a class="nav-brand" href="#"><i class="fab fa-houzz" id="homeIcon"></i></a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">about</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#tech">tech</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">contact</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <div class="box mt-3" id="about">
+                        <h5 id="aboutMeH5">Hi, I'm Joe. <i class="fas fa-mug-hot"></i> It's nice to meet you!</h5>
+                        <p id="aboutMeP">I'm a full-stack web developer, a classical clarinetist and educator, and a
+                            forward-thinking, problem-solving creative.</p>
+                        <button id="aboutMeBtn" class="btn btn-primary"
+                            style="white-space: nowrap; width:min-content;">Tell me
+                            more!</button>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <div class="box" id="portfolio">
+                        <h5>My Projects</h5>
+                        <!--carousel-->
+                        <div class="row">
+                            <div class="col d-flex justify-content-center">
+                                <figure id="carouselIndicators" class="carousel slide" data-ride="carousel"
+                                    data-interval="4000">
+                                    <ol class="carousel-indicators">
+                                        <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                                        <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                                        <li data-target="#carouselIndicators" data-slide-to="2"></li>
+                                        <li data-target="#carouselIndicators" data-slide-to="3"></li>
+                                        <li data-target="#carouselIndicators" data-slide-to="4"></li>
+                                    </ol>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div id="carImg1" class="carouselImg">
+                                            </div>
+                                            <h5>Globe Plotter (collab)</h5>
+                                            <h6>visit the <a href="http://theglobeplotter.com/"
+                                                    target="_blank">webpage</a>/<a
+                                                    href="https://github.com/ravalash/Globe-Plotter"
+                                                    target="_blank">repo</a></h6>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div id="carImg2" class="carouselImg">
+                                            </div>
+                                            <h5>Weather Dashboard</h5>
+                                            <h6>visit the <a href="https://dvorakjt.github.io/weather-dashboard/"
+                                                    target="_blank">webpage</a>/<a
+                                                    href="https://github.com/dvorakjt/weather-dashboard"
+                                                    target="_blank">repo</a></h6>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div id="carImg3" class="carouselImg">
+                                            </div>
+                                            <h5>Notetaker</h5>
+                                            <h6>visit the <a href="https://nameless-waters-89147.herokuapp.com/"
+                                                    target="_blank">webpage</a>/<a
+                                                    href="https://github.com/dvorakjt/note-taker"
+                                                    target="_blank">repo</a></h6>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div id="carImg4" class="carouselImg">
+                                            </div>
+                                            <h5>Song in the Life</h5>
+                                            <h6>(collab)</h6>
+                                            <h6>visit the <a href="https://g0nzy.github.io/song-in-the-life/"
+                                                    target="_blank">webpage</a>/<a
+                                                    href="https://github.com/G0nZy/song-in-the-life"
+                                                    target="_blank">repo</a></h6>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div id="carImg5" class="carouselImg">
+                                            </div>
+                                            <h5>TeamBuilder</h5>
+                                            <h6>visit the <a href="https://github.com/dvorakjt/teamBuilder"
+                                                    target="_blank">repo</a></h6>
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselIndicators" role="button"
+                                        data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselIndicators" role="button"
+                                        data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                </figure>
+                            </div>
+                        </div>
+                        <figcaption>Check out my Github <a href="https://github.com/dvorakjt"
+                                target="_blank">profile</a> for more
+                            examples
+                            of my work or to view my code!
+                        </figcaption>
+                    </div>
+                </div>
+                <div class="col-2"></div>
+            </div>
+            <!--New row-->
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <figure class="box" id="tech">
+                        <h5>Technologies</h5>
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <h6>Front-end</h6>
+                                <ul>
+                                    <li>HTML</li>
+                                    <li>CSS</li>
+                                    <li>JavaScript</li>
+                                    <li>Bootstrap</li>
+                                    <li>Bulma</li>
+                                    <li>jQuery</li>
+                                    <li>Axios</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4">
+                                <h6>Back-end</h6>
+                                <ul>
+                                    <li>Node.js</li>
+                                    <li>Express.js</li>
+                                    <li>Express-handlebars</li>
+                                    <li>MySql</li>
+                                    <li>Sequelize</li>
+                                    <li>MongoDB</li>
+                                    <li>Mongoose</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-4">
+                                <h6>Collaborative</h6>
+                                <ul>
+                                    <li>Github</li>
+                                    <li>Slack</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <p>Background for this page by <a href="https://SVGBackgrounds.com"
+                                        target="_blank">SVGBackgrounds.com</a>.</p>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+            <!--Contact section-->
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8">
+                    <figure class="box" id="contact">
+                        <div class="row">
+                            <div class="col-6">
+                                <div id="contactCol">
+                                    <h5 id="contactH5">Let's build something together!</h5>
+                                </div>
+                            </div>
+                            <div class="col-6 d-flex justify-content-end">
+                                <button class="btn btn-primary" id="contactBtn">Contact Me! --></button>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+                <div class="col-2"></div>
+            </div>
+        </div>
+    </div>
+    <!--link to jQuery and bootstrap scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.0.min.js"
+        integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!--link to custom js script-->
+    <script src="./dist/index.js"></script>
+</body>
+
+</html>

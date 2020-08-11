@@ -1,8 +1,0 @@
-#techJumbo {
-    margin-top: 50px;
-    background-color: rgb(255, 157, 247);
-    padding-bottom: 30px;
-    padding-top: 40px;
-    -webkit-clip-path: polygon(0 10%, 100% 0, 99.5% 100%, .5% 96%);
-    clip-path: polygon(0 10%, 100% 0, 99.5% 100%, .5% 96%);
-}
