@@ -14,7 +14,7 @@ $(document).ready(function () {
         <li><b>LinkedIn: </b><a
         href="https://www.linkedin.com/in/joseph-dvorak-16b565157/" target="_blank">linkedin.com/in/joseph-dvorak-16b565157/</a></li>
         <li><b>Resume: </b>
-    <a href="https://docs.google.com/document/d/1PXaMK_q1np0EzjnN1xRrcNnoyoSNwSiCBh0D7XRiKgU/edit?usp=sharing" target="_blank">Resume.pdf</a></li>
+    <a href="https://docs.google.com/document/d/1PXaMK_q1np0EzjnN1xRrcNnoyoSNwSiCBh0D7XRiKgU/edit?usp=sharing" target="_blank">Resume</a></li>
         </ul>`), $("#contactCol").animate({ opacity: 1 }, 500, function () { })
         }), $("#contactBtn").animate({ opacity: 0 }, 500, function () { })
     })
