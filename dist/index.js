@@ -8,13 +8,13 @@ $(document).ready(function () {
         $("#contactH5").animate({ opacity: 0 }, 500, function () {
             $("#contactCol").css("opacity", 0), $("#contactCol").html(`<ul>
         <li><b>Email: </b>dvorakjt@gmail.com</li>
-        <li><b>Phone: </b>(610) 809-9473</li>
+        <li><b>Phone: </b>(267) 822-9861</li>
         <li><b>Github: </b><a
         href="https://github.com/dvorakjt" target="_blank">github.com/dvorakjt</a></li>
         <li><b>LinkedIn: </b><a
         href="https://www.linkedin.com/in/joseph-dvorak-16b565157/" target="_blank">linkedin.com/in/joseph-dvorak-16b565157/</a></li>
         <li><b>Resume: </b>
-    <a href="https://drive.google.com/file/d/12cAmR5VR1pDYRFfqEgL_CxUzrXI914us/view?usp=sharing" target="_blank">Resume.pdf</a></li>
+    <a href="https://docs.google.com/document/d/1PXaMK_q1np0EzjnN1xRrcNnoyoSNwSiCBh0D7XRiKgU/edit?usp=sharing" target="_blank">Resume.pdf</a></li>
         </ul>`), $("#contactCol").animate({ opacity: 1 }, 500, function () { })
         }), $("#contactBtn").animate({ opacity: 0 }, 500, function () { })
     })
